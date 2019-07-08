@@ -1,4 +1,4 @@
-// GET API
+// GET API geral
 
 // fetch(`http://localhost:3000/cademeupet`)
 
