@@ -23,8 +23,6 @@
 
     //Adiciona um pet ao usuario
     
-    
-    
     const botao = document.querySelector('#botaoPet')
     botao.addEventListener("click", (criarPet) => {
       criarPet.preventDefault()

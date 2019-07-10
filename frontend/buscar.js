@@ -1,6 +1,7 @@
 
       // GET buscar Usuarios ID
 
+
       fetch('http://localhost:3000/usuarios')
     .then((response) => {
       return response.json();
@@ -23,7 +24,7 @@
 
     //Buscar um PET entre os pets dos usuarios
 
-      // const containerBuscar = document.querySelector('#buscarPet')
+      const containerBuscar = document.querySelector('#buscarPet')
      
       const botaoBuscar = document.querySelector('#botaoBuscarPet')
       
@@ -44,16 +45,14 @@
           nomeBuscar, especieBuscar, racaBuscar, generoBuscar, porteBuscar, corBuscar, outrasCaracteristicasBuscar, fotoBuscar, dataBuscar, localBuscar, porteBuscar
         }
 
-        const usuarioId = document.querySelector('#data-id')
-        const petId = usuarioId.pets._id
-      
-        fetch(`http://localhost:3000/usuarios/buscar-pet/${usuarioId}/pet/${petId}`)
+            
+        fetch(`http://localhost:3000/usuarios/pets`)
 
           .then((response) => {
             return response.json();
           })
           .then((data) => {
-            data.forEach((pet) => {
+            data.pets.forEach((pet) => {
 
                 if(petBuscar){
                     return pet
