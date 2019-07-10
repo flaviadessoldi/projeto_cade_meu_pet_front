@@ -1,6 +1,7 @@
 //POST CADASTRAR USUARIO
 
-const usuarioId = document.querySelector('#data-id')
+
+
 const btnCadastro = document.querySelector('#btnCadastro')
 
 btnCadastro.addEventListener("click", (fazerCadastro) => {
@@ -41,6 +42,7 @@ btnCadastro.addEventListener("click", (fazerCadastro) => {
   
   
   
+
   const btnLogin = document.querySelector('#btn-login')
   
   btnLogin.addEventListener("click", (fazerLogin) => {
@@ -64,7 +66,7 @@ btnCadastro.addEventListener("click", (fazerCadastro) => {
     })
     .then((usuarioLogin) => {
       console.log(usuarioLogin)
-      
+         
     })
     .catch((erro) => {
       console.log(erro)
