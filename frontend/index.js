@@ -1,7 +1,4 @@
 //POST CADASTRAR USUARIO
-
-
-
 const btnCadastro = document.querySelector('#btnCadastro')
 
 btnCadastro.addEventListener("click", (fazerCadastro) => {
@@ -30,6 +27,7 @@ btnCadastro.addEventListener("click", (fazerCadastro) => {
       
       const textoSucesso = document.querySelector('h4')
       textoSucesso.innerHTML = ('Seu cadastro foi realizado com sucesso!')
+      window.location.href = "cadastrar.html?"+email+"?"+senha 
       
     })
     
@@ -40,9 +38,6 @@ btnCadastro.addEventListener("click", (fazerCadastro) => {
   
   //POST LOGIN USUARIO
   
-  
-  
-
   const btnLogin = document.querySelector('#btn-login')
   
   btnLogin.addEventListener("click", (fazerLogin) => {
@@ -65,10 +60,20 @@ btnCadastro.addEventListener("click", (fazerCadastro) => {
       return response.json();
     })
     .then((usuarioLogin) => {
-      console.log(usuarioLogin)
+      
+      if (usuarioLogin){
+        console.log(usuarioLogin)
+        window.location.href = "cadastrar.html?"+email+"?"+senha 
+      }
          
     })
     .catch((erro) => {
       console.log(erro)
     })
 })
+
+
+  
+ 
+
+
