@@ -20,16 +20,16 @@ fetch('http://localhost:3000/usuarios')
     botao.addEventListener("click", (criarPet) => {
       criarPet.preventDefault()
 
-      const nome = document.querySelector("#nomePet").value
-      const especie = document.querySelector("#especiePet").value
-      const raca = document.querySelector("#racaPet").value
-      const genero = document.querySelector("#generoPet").value
-      const porte = document.querySelector("#portePet").value
-      const cor = document.querySelector("#corPet").value
-      const outrasCaracteristicas = document.querySelector("#caracteristicasPet").value
-      const foto = document.querySelector("#fotoPet").value
-      const data = document.querySelector("#calendario2").value
-      const local = document.querySelector("#localPet").value
+      const nome = document.querySelector("#nomePet").value.toLowerCase()
+      const especie = document.querySelector("#especiePet").value.toLowerCase()
+      const raca = document.querySelector("#racaPet").value.toLowerCase()
+      const genero = document.querySelector("#generoPet").value.toLowerCase()
+      const porte = document.querySelector("#portePet").value.toLowerCase()
+      const cor = document.querySelector("#corPet").value.toLowerCase()
+      const outrasCaracteristicas = document.querySelector("#caracteristicasPet").value.toLowerCase()
+      const foto = document.querySelector("#fotoPet").value.toLowerCase()
+      const data = document.querySelector("#calendario2").value.toLowerCase()
+      const local = document.querySelector("#localPet").value.toLowerCase()
       const petCadastrado = {
         nome, especie, raca, genero, porte, cor, outrasCaracteristicas, foto, data, local, porte
       }
@@ -49,7 +49,7 @@ fetch('http://localhost:3000/usuarios')
         .then((usuario) => {
 
           const pet = usuario.pets[0]
-          
+
           console.log(usuario)
           console.log(pet)
 
