@@ -91,7 +91,7 @@
                 <h4 class="card-text center">Preencha o formulário com todas as informações sobre o Pet, incluindo
                     uma foto e clique em enviar! </h4>
                 <div class="card-body" id='div-cadastro'>
-                    <form >
+                    <form id ='form-cadastrar'>
                         <div class="col-12">
                             <div class="form-group">
                                 <label for="formGroupExampleInput">Nome do Pet</label>
@@ -124,13 +124,13 @@
                                 
                                       </div>
                             </div>
-                            <label>Data em que o Pet foi visto pela última vez: <input type="text" id="calendario2" placeholder="Data em que seu Pet foi visto pela última vez"/>
+                            <label>Data em que o Pet foi encontrado: <input type="text" id="calendario2" placeholder="Data em que seu Pet foi encontrado"/>
                             </label>
-                            <form method="post" action="" id="">
+                            
                                 <fieldset>
 
                                     <div>
-                                        <label for="txtEndereco">Local em que o Pet foi visto pela última vez:</label>
+                                        <label for="txtEndereco">Local em que o Pet foi encontrado:</label>
                                         <input type="text" id="localPet" name="txtEndereco" />
                                     </div>
                                     <div>
@@ -143,13 +143,13 @@
                                     <input type="hidden" id="txtLatitude" name="txtLatitude" />
                                     <input type="hidden" id="txtLongitude" name="txtLongitude" />
                                 </fieldset>
+                            
+                                <div class="card-body center">
+                                    <button class="btn-large waves-effect orange darken-3" id="botaoPet" type="submit" name="action">
+                                        <i class="material-icons center">Enviar!</i>
+                                    </button>
+                                </div>
                             </form>
-                        </form>
-                        <div class="card-body center">
-                        <button class="btn-large waves-effect orange darken-3" id="botaoPet" type="submit" name="action">
-                            <i class="material-icons center">Enviar!</i>
-                          </button>
-                          </div>
 
                 </div>
             </div>

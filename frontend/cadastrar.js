@@ -16,8 +16,8 @@ fetch('http://localhost:3000/usuarios')
     })
     console.log(usuarioId)
 
-    const botao = document.querySelector('#botaoPet')
-    botao.addEventListener("click", (criarPet) => {
+    const form = document.querySelector('#form-cadastrar')
+    form.addEventListener("submit", (criarPet) => {
       criarPet.preventDefault()
 
       const nome = document.querySelector("#nomePet").value.toLowerCase()
@@ -28,7 +28,7 @@ fetch('http://localhost:3000/usuarios')
       const cor = document.querySelector("#corPet").value.toLowerCase()
       const outrasCaracteristicas = document.querySelector("#caracteristicasPet").value.toLowerCase()
       const foto = document.querySelector("#fotoPet").value.toLowerCase()
-      const data = document.querySelector("#calendario2").value.toLowerCase()
+      const data = document.querySelector("#calendario2").value 
       const local = document.querySelector("#localPet").value.toLowerCase()
       const petCadastrado = {
         nome, especie, raca, genero, porte, cor, outrasCaracteristicas, foto, data, local, porte
@@ -54,8 +54,10 @@ fetch('http://localhost:3000/usuarios')
           console.log(pet)
 
           const textoSucesso = document.querySelector('h4')
-          textoSucesso.innerHTML = ('O Pet foi cadastrado com sucesso!')
+          textoSucesso.innerHTML = ('O PET FOI CADASTRADO COM SUCESSO!')
 
+          const formContainer = document.querySelector('#div-cadastro')
+          formContainer.innerHTML = ''
 
         })
         .catch((erro) => {

@@ -11,11 +11,11 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
- 
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
-  
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
     <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
     <script>
@@ -46,80 +46,84 @@
     <script type="text/javascript"
         src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBanDmzeN2egvGO-TzZkrrFa9dDNOhavhU&amp;"></script>
 
-   
+
 
 </head>
 
 <body>
-        <div class="navbar-fixed">
-                <nav class="nav-extended">
-                        <div class="nav-wrapper orange darken-3">
-                    <img src="./img/Prancheta 4 cópia.png" class="brand-logo" />
-                    <ul class="right hide-on-med-and-down">
-                            <li><a class="waves-effect orange darken-3 btn-large"  href="index.html">Home</a></li>
-                            <li><a class="waves-effect orange darken-3 btn-large" href="comoFunciona.html">Como funciona?</a></li>
-                            <li><a class="waves-effect orange darken-3 btn-large" href="buscar.html">Buscar um Pet!</a></li>
-                            <li><a class="waves-effect orange darken-3 btn-large" href="faleConosco.html">Fale Conosco</a></li>
-                    </ul>
+    <div class="navbar-fixed">
+        <nav class="nav-extended">
+            <div class="nav-wrapper orange darken-3">
+                <img src="./img/Prancheta 4 cópia.png" class="brand-logo" />
+                <ul class="right hide-on-med-and-down">
+                    <li><a class="waves-effect orange darken-3 btn-large" href="index.html">Home</a></li>
+                    <li><a class="waves-effect orange darken-3 btn-large" href="comoFunciona.html">Como funciona?</a>
+                    </li>
+                    <li><a class="waves-effect orange darken-3 btn-large" href="buscar.html">Buscar um Pet!</a></li>
+                    <li><a class="waves-effect orange darken-3 btn-large" href="faleConosco.html">Fale Conosco</a></li>
+                </ul>
+                <div class="nav-content">
                     <div class="nav-content">
-                            <div class="nav-content">
-                                    <ul class="tabs tabs-transparent">
-                                      <li class="tab"><a href=""></a></li>
-                                      <li class="tab"><a class="active" href="#"></a></li>
-                                    </ul>
-                                  </div>
-                                </nav>
-                </div>
-            </div>
-            </nav>
-        </div>
+                        <ul class="tabs tabs-transparent">
+                            <li class="tab"><a href=""></a></li>
+                            <li class="tab"><a class="active" href="#"></a></li>
+                        </ul>
+                    </div>
+        </nav>
+    </div>
+    </div>
+    </nav>
+    </div>
 
 
-        <main>
-    <div class="container" >
-         <div class="card-body" >
+    <main>
+        <div class="container">
+            <div class="card-body">
                 <div class="col s12 m8 offset-m2 l6 offset-l3">
-                       
-                          <div class="row valign-wrapper">
-                            <div class="col s2">
-                              <img src="./img/buscar.jpg" alt="" class="responsive-img"> 
-                            </div>
-                            
+
+                    <div class="row valign-wrapper">
+                        <div class="col s2">
+                            <img src="./img/buscar.jpg" alt="" class="responsive-img">
                         </div>
-                      </div>
-                
+
+                    </div>
+                </div>
+
                 <h4 class="card-text center">Preencha os campos abaixo e confira se o Pet foi encontrado: </h4>
-                <div class="card-body"id="buscarPet">
-                    <form>
-                        <div class="col-12">
-                            <div class="form-group">
-                                <label for="formGroupExampleInput">Nome do Pet</label>
-                                <input type="text" class="form-control" id="nomePetBuscar" placeholder="Escreva o nome do Pet ou se ele tem alguma identifcação de nome. Se não tiver, basta deixar este campo em branco.">
-                                <label for="form-check-input">Espécie do Pet</label>
-                                <input type="text" class="form-control" id="especiePetBuscar"
-                                    placeholder="O Pet é um cahorro, um gato ou outra espécie de animal?">
-                                <label for="formGroupExampleInput">Raça</label>
-                                <input type="text" class="form-control" id="racaPetBuscar"
-                                    placeholder="Qual a raça do Pet? Se não tiver ou souber, preencha como SRD">
-                                <label for="form-check-input">Gênero do Pet</label>
-                                <input type="text" class="form-control" id="generoPetBuscar"
-                                    placeholder="O Pet é macho ou fêmea?">
-                                <label for="exampleInputEmail1">Porte do Pet</label>
-                                <input type="text" class="form-control" id="portePetBuscar"
-                                    placeholder="Qual o porte do Pet?">
-                                <label for="exampleInputEmail1">Cor do Pêlo</label>
-                                <input type="text" class="form-control" id="corPetBuscar"
-                                    placeholder="Qual a cor do pêlo do Pet?">
-                            </div>
-                            <div class="form-group">
-                                <label for="exampleInputPassword1">Outras Características do Pet</label>
-                                <input type="text" class="form-control" id="caracteristicasPetBuscar"
-                                    placeholder="Características do Pet que são úteis e importantes.">
-                            </div>
-                           
-                            <label>Data em que o Pet foi visto pela última vez: <input type="text" id="calendario" placeholder="Data em que seu Pet foi visto pela última vez"/>
-                            </label>
-                            <form method="post" action="" id="">
+                <div class="card-body" id="buscarPet">
+                    <div class="card-body" id="buscarPetForm">
+                        <form id="form-buscar">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="formGroupExampleInput">Nome do Pet</label>
+                                    <input type="text" class="form-control" id="nomePetBuscar"
+                                        placeholder="Escreva o nome do Pet ou se ele tem alguma identifcação de nome. Se não tiver, basta deixar este campo em branco.">
+                                    <label for="form-check-input">Espécie do Pet</label>
+                                    <input type="text" class="form-control" id="especiePetBuscar"
+                                        placeholder="O Pet é um cahorro, um gato ou outra espécie de animal?">
+                                    <label for="formGroupExampleInput">Raça</label>
+                                    <input type="text" class="form-control" id="racaPetBuscar"
+                                        placeholder="Qual a raça do Pet? Se não tiver ou souber, preencha como SRD">
+                                    <label for="form-check-input">Gênero do Pet</label>
+                                    <input type="text" class="form-control" id="generoPetBuscar"
+                                        placeholder="O Pet é macho ou fêmea?">
+                                    <label for="exampleInputEmail1">Porte do Pet</label>
+                                    <input type="text" class="form-control" id="portePetBuscar"
+                                        placeholder="Qual o porte do Pet?">
+                                    <label for="exampleInputEmail1">Cor do Pêlo</label>
+                                    <input type="text" class="form-control" id="corPetBuscar"
+                                        placeholder="Qual a cor do pêlo do Pet?">
+                                </div>
+                                <div class="form-group">
+                                    <label for="exampleInputPassword1">Outras Características do Pet</label>
+                                    <input type="text" class="form-control" id="caracteristicasPetBuscar"
+                                        placeholder="Características do Pet que são úteis e importantes.">
+                                </div>
+
+                                <label>Data em que o Pet foi visto pela última vez: <input type="text" id="calendario"
+                                        placeholder="Data em que seu Pet foi visto pela última vez" />
+                                </label>
+
                                 <fieldset>
 
                                     <div>
@@ -127,7 +131,7 @@
                                         <input type="text" id="localPet2" name="txtEndereco" />
                                     </div>
                                     <div>
-                                      
+
                                     </div>
 
                                     <div id="mapa2" style="height: 500px; width: 900px">
@@ -136,27 +140,29 @@
                                     <input type="hidden" id="txtLatitude2" name="txtLatitude" />
                                     <input type="hidden" id="txtLongitude2" name="txtLongitude" />
                                 </fieldset>
-                            </form>
+
                         </form>
                         <div class="card-body center">
-                        <button class="btn-large waves-effect orange darken-3" id="botaoBuscarPet" type="submit" name="action">
-                            <i class="material-icons center">Buscar!</i>
-                          </button>
-                          </div>
-
+                            <button class="btn-large waves-effect orange darken-3" id="botaoBuscarPet" type="submit"
+                                name="action">
+                                <i class="material-icons center">Buscar!</i>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-        </main>    
-        
-        <footer class="page-footer orange darken-3">
-            <div class="footer-copyright center">
-                <div class="container">
-                    Creative Commons 2019 | Desenvolvido por Flávia Dessoldi
-                </div>
+    </main>
+
+    <footer class="page-footer orange darken-3">
+        <div class="footer-copyright center">
+            <div class="container">
+                Creative Commons 2019 | Desenvolvido por Flávia Dessoldi
             </div>
-        </footer>
-        <script src="mapa2.js"></script>
-        <script src="buscar.js"></script>
-    </body>
-    </html>
+        </div>
+    </footer>
+    <script src="mapa2.js"></script>
+    <script src="buscar.js"></script>
+</body>
+
+</html>
