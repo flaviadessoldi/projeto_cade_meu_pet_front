@@ -35,7 +35,7 @@ fetch('https://cademeupetapp.herokuapp.com/usuarios')
       }
 
 
-      fetch(`https://cademeupetapp.herokuapp.com/usuarios/adicionar-pet/${usuarioId._id}`, {
+      fetch(`http://localhost:3000/usuarios/adicionar-pet/${usuarioId._id}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json"

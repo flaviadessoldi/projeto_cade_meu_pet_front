@@ -11,7 +11,7 @@ btnCadastro.addEventListener("click", (fazerCadastro) => {
   const senha = document.querySelector("#senhaCadastro").value
   const usuario = { nome, telefone, email, senha }
   
-  fetch('https://cademeupetapp.herokuapp.com/usuarios',
+  fetch('http://localhost:3000/usuarios',
   {
     method: 'POST',
     body: JSON.stringify(usuario),
@@ -48,7 +48,7 @@ btnCadastro.addEventListener("click", (fazerCadastro) => {
     const login = { email, senha }
     
     
-    fetch('https://cademeupetapp.herokuapp.com/usuarios/login',
+    fetch('http://localhost:3000/usuarios/login',
     {
       method: 'POST',
       body: JSON.stringify(login),
