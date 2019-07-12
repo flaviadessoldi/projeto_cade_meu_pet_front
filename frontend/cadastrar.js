@@ -4,7 +4,7 @@ const params = location.search.split('?', 3)
 const email = params[1]
 const token = params[2]
 
-fetch('https://cademeupetapp.herokuapp.com/usuarios')
+fetch('https://cademeupetback.herokuapp.com/usuarios')
   .then((response) => {
     return response.json();
   })
