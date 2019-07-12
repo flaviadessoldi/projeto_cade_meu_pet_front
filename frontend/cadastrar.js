@@ -4,7 +4,7 @@ const params = location.search.split('?', 3)
 const email = params[1]
 const token = params[2]
 
-fetch('http://localhost:3000/usuarios')
+fetch('https://cademeupetapp.herokuapp.com/usuarios')
   .then((response) => {
     return response.json();
   })
@@ -35,7 +35,7 @@ fetch('http://localhost:3000/usuarios')
       }
 
 
-      fetch(`http://localhost:3000/usuarios/adicionar-pet/${usuarioId._id}`, {
+      fetch(`https://cademeupetapp.herokuapp.com/usuarios/adicionar-pet/${usuarioId._id}`, {
         method: 'POST',
         headers: {
           "Content-Type": "application/json"
