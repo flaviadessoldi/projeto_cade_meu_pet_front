@@ -15,7 +15,7 @@ formBuscar.addEventListener("submit", (buscarPet) => {
   const dataBuscar = document.querySelector("#calendario").value.toLowerCase()
   const localBuscar = document.querySelector("#localPet2").value.toLowerCase()
 
-  fetch(`http://localhost:3000/busca/pets/?especie=${especieBuscar}&raca=${racaBuscar}&genero=${generoBuscar}&${porteBuscar}&cor=${corBuscar}&data=${dataBuscar}&local=${localBuscar}`)
+  fetch(`https://cademeupetback.herokuapp.com/busca/pets/?especie=${especieBuscar}&raca=${racaBuscar}&genero=${generoBuscar}&${porteBuscar}&cor=${corBuscar}&data=${dataBuscar}&local=${localBuscar}`)
 
     .then((response) => {
       return response.json();

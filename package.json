@@ -1,0 +1,19 @@
+{
+  "name": "projeto_cade_meu_pet_front",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flaviadessoldi/projeto_cade_meu_pet_front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flaviadessoldi/projeto_cade_meu_pet_front/issues"
+  },
+  "homepage": "https://github.com/flaviadessoldi/projeto_cade_meu_pet_front#readme"
+}
