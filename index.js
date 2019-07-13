@@ -1,24 +1,5 @@
 //POST CADASTRAR USUARIO
 
-
-fetch(`https://cademeupetback.herokuapp.com/usuarios/${usuarioId._id}/pets`)
-  .then((response) => {
-    return response.json();
-   })
-  .then((data) => {
-    console.log(data)
-
-    data.pets.forEach(pets=>{
-      response.send(pets)
-    })
-   
-    })
-
-    .catch((erro) => {
-      console.log(erro)
-    })
-
-
 const btnCadastro = document.querySelector('#btnCadastro')
 
 btnCadastro.addEventListener("click", (fazerCadastro) => {
