@@ -19,7 +19,7 @@
   "homepage": "https://github.com/flaviadessoldi/projeto_cade_meu_pet_front#readme",
   "dependencies": {
     "googlemaps": "^1.12.0",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "materialize-css": "^1.0.0"
   }
 }
